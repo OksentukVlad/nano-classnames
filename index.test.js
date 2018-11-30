@@ -1,6 +1,6 @@
 var cn = require('./index.js');
 
-test('00', () => {
+test('Object with only true values', () => {
   var result = cn({
     a: true,
     b: true,
@@ -13,7 +13,7 @@ test('00', () => {
   expect(result).toBe('f e d c b a');
 });
 
-test('01', () => {
+test('Object with only false values', () => {
   var result = cn({
     a: false,
     b: false,
@@ -26,7 +26,7 @@ test('01', () => {
   expect(result).toBe('');
 });
 
-test('02', () => {
+test('Object with values of different types', () => {
   var result = cn({
     a: true,
     b: false,
@@ -39,25 +39,25 @@ test('02', () => {
   expect(result).toBe('f a');
 });
 
-test('03', () => {
+test('Empty object as parameter', () => {
   var result = cn({});
 
   expect(result).toBe('');
 });
 
-test('04', () => {
+test('Empty array as parameter', () => {
   var result = cn([]);
 
   expect(result).toBe('');
 });
 
-test('05', () => {
+test('String as parameter', () => {
   var result = cn('string');
 
   expect(result).toBe('5 4 3 2 1 0');
 });
 
-test('06', () => {
+test('Number as parameter', () => {
   var result = cn(123456);
 
   expect(result).toBe('');
