@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "benchmark": "^2.1.4",
+    "classcat": "^3.2.3",
     "classnames": "^2.2.6",
     "classnames-minimal": "^1.0.0",
     "gzip-size": "^5.0.0",

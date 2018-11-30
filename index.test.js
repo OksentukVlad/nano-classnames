@@ -10,7 +10,7 @@ test('Object with only true values', () => {
     f: true
   });
 
-  expect(result).toBe('f e d c b a');
+  expect(result).toBe('a b c d e f');
 });
 
 test('Object with only false values', () => {
@@ -33,10 +33,12 @@ test('Object with values of different types', () => {
     c: 0,
     d: null,
     e: undefined,
-    f: 1
+    f: 1,
+    g: '',
+    h: '1'
   });
 
-  expect(result).toBe('f a');
+  expect(result).toBe('a f h');
 });
 
 test('Empty object as parameter', () => {
@@ -54,7 +56,7 @@ test('Empty array as parameter', () => {
 test('String as parameter', () => {
   var result = cn('string');
 
-  expect(result).toBe('5 4 3 2 1 0');
+  expect(result).toBe('0 1 2 3 4 5');
 });
 
 test('Number as parameter', () => {

@@ -1,11 +1,9 @@
 module.exports = function (classesObj) {
-  var keys = Object.keys(classesObj);
-  var i = keys.length;
-  var classes = '';
+  var i, classes = ''
 
-  for (; i--;) {
-    if (classesObj[keys[i]]) classes += (classes ? ' ' : '') + keys[i]
+  for (i in classesObj) {
+    if (classesObj[i]) classes += (classes && ' ') + i
   }
 
-  return classes;
-};
+  return classes
+}
