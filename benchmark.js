@@ -20,7 +20,7 @@ var testClassObject2 = Array(10000).fill().reduce((acc, _, i) => Object.assign(a
 
 suite
   .add('nano-classnames', function () {
-    nanoClassnames('', testClassObject1);
+    nanoClassnames(testClassObject1);
   })
   .add('classnames-minimal', function () {
     classnamesMinimal(testClassObject1);
