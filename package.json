@@ -1,0 +1,23 @@
+{
+  "name": "nano-classnames",
+  "version": "0.0.1",
+  "description": "nano-classnames",
+  "main": "index.js",
+  "scripts": {
+    "size": "size-limit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "classnames": "^2.2.6",
+    "classnames-minimal": "^1.0.0",
+    "gzip-size": "^5.0.0",
+    "size-limit": "^0.21.0"
+  },
+  "size-limit": [
+    {
+      "path": "index.js",
+      "limit": "50 B"
+    }
+  ]
+}
