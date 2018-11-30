@@ -4,7 +4,7 @@ module.exports = function (classesObj) {
   var classes = '';
 
   for (; i--;) {
-    if (classesObj[keys[i]]) classes = (classes ? classes + ' ' : '') + keys[i]
+    if (classesObj[keys[i]]) classes += (classes ? ' ' : '') + keys[i]
   }
 
   return classes;
